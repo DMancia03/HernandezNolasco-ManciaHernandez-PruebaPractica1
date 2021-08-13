@@ -1,0 +1,58 @@
+:root{
+    --azulFuerte: #222831;
+    --azulMedio: #30475E;
+    --azulDebil: #8EA4BF;
+    --cafeSuave: #C1A57B;
+    --blanco: #ECECEC;
+}
+
+body{
+    height: 100vh;
+    max-height: 100vh;
+}
+
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 87vh;
+    max-height: 87vh;
+}
+
+.article-img{
+    background-color: var(--azulFuerte);
+    height: 100%;
+    max-height: 100%;
+    overflow: hidden;
+    background-image: url(../img/centroamerica.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.margin-2{
+    margin: 2em;
+}
+
+.leyenda{
+    color: var(--azulMedio);
+    text-align: center;
+}
+
+.btn-1{
+    display: block;
+    text-decoration: none;
+    background-color: var(--azulMedio);
+    color: var(--cafeSuave);
+    padding: 1em;
+}
+
+.contenedor-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-1:hover{
+    background-color: var(--azulFuerte);
+    color: var(--blanco);
+}
