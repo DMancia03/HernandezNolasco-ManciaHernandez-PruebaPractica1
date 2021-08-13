@@ -46,7 +46,7 @@ window.onload = function(){
         if(errores > 0){
             alert("Llene correctamente los campos.");
         }else{
-            var candidato = Persona(txtNombres.value, txtApellidos.value, emailCandidato.value, dtNacimiento.value, homeCountry , tel, email, phone );
+            var candidato = Persona(txtNombres.value, txtApellidos.value, dtNacimiento.value, rdbGenero.value, stcPaisNacimiento , tel, email, phone, nowCountry, dep, direction );
         }
     }
 }
