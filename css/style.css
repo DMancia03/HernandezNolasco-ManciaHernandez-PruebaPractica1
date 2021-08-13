@@ -9,4 +9,37 @@
 *{
     padding: 0;
     margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header{
+    background-color: var(--azulFuerte);
+}
+.header{
+    display: flex;   
+    align-items: center;
+}
+.logo{
+    color: white;
+    width: 50%;
+    padding: 0.5em;
+    font-size: 2em;
+}
+.urls{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}   
+.urls>p{
+    margin: 0 1em;;
+}
+.urls a{
+    color: white;
+    font-style: none;
+    text-decoration: none;
+    padding: 0.25em;
+}
+.urls a:hover{
+    background-color: var(--azulMedio);
+    border-radius: 10px;
+    transition: font-weight 0.5ms;
 }
