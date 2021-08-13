@@ -23,6 +23,8 @@ function inicio(){
     "</tr><tr>";
         table +="<td>"+localStorage.getItem('apellido')+"</td>";
         table +="<td>"+localStorage.getItem('nombre')+"</td>";
+        table +="<td>"+localStorage.getItem('nacimiento')+"</td>";
+
         table +="<td>"+localStorage.getItem('genero')+"</td>";
         table +="<td>"+localStorage.getItem('nacionalidad')+"</td>";
         table +="<td>"+localStorage.getItem('email')+"</td>";
