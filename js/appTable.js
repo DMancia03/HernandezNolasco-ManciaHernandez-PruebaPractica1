@@ -7,7 +7,8 @@ function inicio(){
         mytablesDiv.innerHTML +=text;
     }else{
 
-        var table = "<table>";
+        var table = "<h1 class='full'>Mis datos ingresados</h1><p class='full'>Se muestran los datos ingresados en el sitio de registro.</p>";
+        table +="<table>";
         table += "<tr>" +
         "<th>Apellidos</th>"+
         "<th>Nombre</th>"+

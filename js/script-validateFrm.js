@@ -43,7 +43,7 @@ function validateFORM() {
         if(errores > 0){
             alert("Llene correctamente los campos.");
         }else{
-            var candidato = new Persona(txtNombres.value, txtApellidos.value, dtNacimiento.value, rdbGenero.value, stcPaisNacimiento.value , txtTelefono.value, emailCandidato.value, txtCelular.value, sltPResidencia.value, sltPResidencia.value, txtDomicilio.value );
+            var candidato = new Persona(txtNombres.value, txtApellidos.value, dtNacimiento.value, rdbGenero.value, stcPaisNacimiento.value , txtTelefono.value, emailCandidato.value, txtCelular.value, sltPResidencia.value, sltDResidencia.value, txtDomicilio.value );
             candidato.savePerson();
             alert("Registro completado, puede ver los candidatos en Ver candidatos.");
         }
