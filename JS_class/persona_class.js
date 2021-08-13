@@ -20,7 +20,7 @@ class Persona{
         localStorage.setItem("nombre", this.nombre);
         localStorage.setItem("nacimiento", this.nacimiento)
         localStorage.setItem("genero", this.genero);
-        localStorage.setItem("nacionalida", this.pais_Nacimiento);
+        localStorage.setItem("nacionalidad", this.pais_Nacimiento);
         localStorage.setItem("email", this.email);
         localStorage.setItem("telefono", this.telefono)
         localStorage.setItem("celular", this.celular);
