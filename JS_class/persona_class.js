@@ -9,7 +9,10 @@ class Persona{
     }
 }
 
-
+//Una clase
 class candidatoInfo extends Persona{
-    
+    constructor(email){
+        this.email = email;
+        
+    }
 }
