@@ -16,8 +16,17 @@ class Persona{
 
     savePerson(){
         var json = {
-            "apellido" : this.
-        }
+            "apellido" : this.apellido,
+            "nombre": this.nombre,
+            "Fnacimiento" : this.nacimiento,
+            "genero": this.genero,
+            "paisNatal" :  this.pais_Nacimiento,
+            "paisRecidencia": this.paisRecidencia,
+            "Departamento": this.depR,
+            "email": this.email,
+            "telefono": this.telefono,
+            "celular": this.celular
+        };
     }
 
 }
