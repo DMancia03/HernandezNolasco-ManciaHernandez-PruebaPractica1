@@ -14,8 +14,10 @@ class Persona{
         this.direccion = direction;
     }
 
-    getEmail(){
-    
+    savePerson(){
+        var json = {
+            "apellido" : this.
+        }
     }
 
 }
