@@ -6,7 +6,7 @@ article{
     align-items: center;
     justify-content: center;
 }
-article form{
+article form, article div{
     width: 75%;
     margin: 1em;
     padding: 2em;
