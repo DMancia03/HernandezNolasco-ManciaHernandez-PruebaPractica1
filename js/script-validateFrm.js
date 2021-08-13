@@ -58,10 +58,8 @@ function esVacio(input) {
     }
 }
 
-//Nota: Por tiempo, solo se pudo hacer que validara que la cadena no estuviera tan corta pues estos
-//elementos no suelen ser de longitud corta
-
-//Función para validar si el value de un input tel es un número
+//Función para validar si el value de un input tel es un número, solo se valido que
+//tenga por lo menos 8 caracteres
 function esNumeroTelefono(input) {
     var numero = input.value;
     if(numero.length >= 8){
@@ -71,7 +69,7 @@ function esNumeroTelefono(input) {
     }
 }
 
-//Función para validar si el value de un input email es un número
+//Función para validar si el value de un input email es un email con la comprobacion de caracteres
 function esEmail(input) {
     var email = input.value;
     if(email.length >= 5){
@@ -86,7 +84,7 @@ function esEmail(input) {
     }
 }
 
-//Función para validar si el value de un input es un dirección
+//Función para validar si el value de un input no es corto, por que estos datos no son cortos
 function esDireccion(input) {
     var direccion = input.value;
     if(direccion.length >= 10){
