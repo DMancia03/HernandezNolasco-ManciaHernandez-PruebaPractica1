@@ -75,7 +75,12 @@ function esNumeroTelefono(input) {
 function esEmail(input) {
     var email = input.value;
     if(email.length >= 5){
-        return true;
+        caracteres = /^[-\w.%+]{1,64}@(?:[A-Z0-9-]{1,63}\.){1,125}[A-Z]{2,63}$/i
+        if (caracteres.test(email)){
+            return true;
+        } else {
+            return false;
+        }
     }else{
         return false;
     }
