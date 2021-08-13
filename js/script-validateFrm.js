@@ -32,7 +32,8 @@ function validateFORM() {
             alert("Llene correctamente los campos.");
         }else{
             var candidato = new Persona(txtNombres.value, txtApellidos.value, dtNacimiento.value, rdbGenero.value, stcPaisNacimiento.value , txtTelefono.value, emailCandidato.value, txtCelular.value, sltPResidencia.value, sltPResidencia.value, txtDomicilio.value );
-            alert("correcto");
+            candidato.savePerson();
+            alert("Registro completado.");
         }
 }
 
