@@ -1,3 +1,11 @@
+:root{
+    --azulFuerte: #222831;
+    --azulMedio: #30475E;
+    --azulDebil: #8EA4BF;
+    --cafeSuave: #C1A57B;
+    --blanco: #ECECEC;
+}
+
 article{
     height: 100%;
     width: 100%;
@@ -28,4 +36,28 @@ form div{
 }
 .full{
     grid-column: span 2;
+}
+
+.titulo-1{
+    color: var(--azulMedio);
+}
+
+.btn-1{
+    display: block;
+    text-decoration: none;
+    background-color: var(--azulMedio);
+    color: var(--cafeSuave);
+    padding: 1em;
+    cursor: pointer;
+}
+
+.contenedor-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-1:hover{
+    background-color: var(--azulFuerte);
+    color: var(--blanco);
 }
