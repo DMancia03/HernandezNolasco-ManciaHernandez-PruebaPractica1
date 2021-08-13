@@ -47,12 +47,7 @@
                 </label>
                 <input type="text" name="" id="txtNombres">
             </div>
-            <div>
-                <label for="">
-                    Ingrese sus apellidos
-                </label>
-                <input type="text" name="" id="txtApellidos">
-            </div>
+ 
             <div>
                 <label for="">
                     Ingrese su E-mail
@@ -60,10 +55,22 @@
                 <input type="email" name="" id="txtEmail">
             </div>
             <div>
-                <label for="">
-                    Ingrese sus apellidos
+                <label for="dtNacimiento">
+                    Ingrese la fecha de nacimiento
                 </label>
-                <input type="text" name="" id="txtApellidos">
+                <input type="date" name="" id="dtNacimiento">
+            </div>
+            <div>
+                <h3>Ingrese su país de nacimiento</h3>
+                <select name="" id="pNacimiento">
+                    <option value="">El salvador</option>
+                    <option value="">Guatemala</option>
+                    <option value="">Belice</option>
+                    <option value="">Nicaragua</option>
+                    <option value="">Costa Rica</option>
+                    <option value="">Honduras</option>
+                    <option value="">Panáma</option>
+                </select>
             </div>
             <div>
                 <h3>Ingrese su genero</h3>
@@ -73,11 +80,38 @@
                 <input type="radio" name="rdbGenero" id="rdbFemenino">
             </div>
             <div>
-                
+                <h3>Ingrese su país</h3>
+                <select name="" id="pResidencia">
+                    <option value="">El salvador</option>
+                    <option value="">Guatemala</option>
+                    <option value="">Belice</option>
+                    <option value="">Nicaragua</option>
+                    <option value="">Costa Rica</option>
+                    <option value="">Honduras</option>
+                    <option value="">Panáma</option>
+                </select>
+                <select name="" id="dResidencia" disabled>
+                        <option value="">Departamentos</option>  
+                </select>
+            </div>
+            <div>
+                <h3>Información de contacto</h3>
+                <div>
+                    <label for="txtDomicilio">Ingrese su domicilio actual</label>
+                    <textarea name="" id="txtDomicilio" cols="10" rows="3"></textarea>
+                </div>
+                <div>
+                    <label for="txtTelefono">Ingrese su telefono de domicilio</label>
+                </div>
+                <div></div>
+               
+            
             </div>
         </form>
 
     </article>
-
+    <script src="JS_class/paises.js"></script>
+    <script src="JS_class/persona_class.js"></script>
+    <script src="js/app_register.js"></script>
 </body>
 </html>
