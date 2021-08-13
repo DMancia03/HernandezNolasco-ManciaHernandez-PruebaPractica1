@@ -28,6 +28,18 @@ function validateFORM() {
             errores++;
         }
 
+        if(!(esNumeroTelefono(txtTelefono)) && !(esNumeroTelefono(txtCelular))){
+            errores++;
+        }
+
+        if(!(esEmail(emailCandidato))){
+            errores++;
+        }
+
+        if(!(esDireccion(txtDomicilio))){
+            errores++;
+        }
+
         if(errores > 0){
             alert("Llene correctamente los campos.");
         }else{
@@ -40,6 +52,39 @@ function validateFORM() {
 //Función para validar si el value de un input esta vacío
 function esVacio(input) {
     if(input.value == ""){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+//Nota: Por tiempo, solo se pudo hacer que validara que la cadena no estuviera tan corta pues estos
+//elementos no suelen ser de longitud corta
+
+//Función para validar si el value de un input tel es un número
+function esNumeroTelefono(input) {
+    var numero = input.value;
+    if(numero.length >= 8){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+//Función para validar si el value de un input email es un número
+function esEmail(input) {
+    var email = input.value;
+    if(email.length >= 5){
+        return true;
+    }else{
+        return false;
+    }
+}
+
+//Función para validar si el value de un input es un dirección
+function esDireccion(input) {
+    var direccion = input.value;
+    if(direccion.length >= 10){
         return true;
     }else{
         return false;
