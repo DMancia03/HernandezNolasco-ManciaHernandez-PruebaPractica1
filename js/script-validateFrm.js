@@ -2,6 +2,7 @@ window.onload = function(){
     var btnSubmit = document.getElementById("btnSubmit");
     btnSubmit.onclick = function(){
         var errores = 0;
+        var frmNew = document.getElementById("frmNew");
         var txtApellidos = document.getElementById("txtApellidos");
         var txtNombres = document.getElementById("txtNombres");
         var emailCandidato = document.getElementById("txtEmail");
@@ -41,15 +42,11 @@ window.onload = function(){
         if(txtDomicilio.value == ""){
             errores++;
         }
-        if(txtTelefono1.value == ""){
-            errores++;
-        }
 
         if(errores > 0){
             alert("Llene correctamente los campos.");
-            return false;
         }else{
-            return true;
+            var candidato = Persona(txtNombres.value, txtApellidos.value, emailCandidato.value, dtNacimiento.value, homeCountry , tel, email, phone );
         }
     }
 }

@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/formulario.css">
     <link rel="shortcut icon" href="img/team.png" type="image/x-icon">
-
+    <script src="js/script-validateFrm.js"></script>
 </head>
 <body>
     <header>
@@ -37,36 +37,36 @@
     </header>
     <article>
      
-        <form action="">
+        <form id="frmNew" name="frmNew" action="#" method="POST">
             <h1 class="full">Registrarme com nuevo candidato</h1>
             <div>
-                <label for="">
+                <label for="txtApellidos">
                     Ingrese sus apellidos
                 </label>
-                <input type="text" name="" id="txtApellidos">
+                <input type="text" name="txtApellidos" id="txtApellidos">
             </div>
             <div>
-                <label for="">
+                <label for="txtNombres">
                     Ingrese sus nombres
                 </label>
-                <input type="text" name="" id="txtNombres">
+                <input type="text" name="txtNombres" id="txtNombres">
             </div>
  
             <div>
-                <label for="">
+                <label for="txtEmail">
                     Ingrese su E-mail
                 </label>
-                <input type="email" name="" id="txtEmail">
+                <input type="email" name="txtEmail" id="txtEmail">
             </div>
             <div>
                 <label for="dtNacimiento">
                     Ingrese la fecha de nacimiento
                 </label>
-                <input type="date" name="" id="dtNacimiento">
+                <input type="date" name="dtNacimiento" id="dtNacimiento">
             </div>
             <div>
                 <h3>Ingrese su país de nacimiento</h3>
-                <select name="" id="pNacimiento">
+                <select name="pNacimiento" id="pNacimiento">
                     <option value="0">--Seleccione un país</option>
                     <option value="1">El salvador</option>
                     <option value="2">Guatemala</option>
@@ -111,9 +111,8 @@
                 </div>
                 <div></div>
                
-            </div>
-            <button id="btnSubmit" class="full">Ingresar</button>
-        
+            </div><p id="btnSubmit" class="full">Ingresar</p>
+        </form>
     </article>
     <script src="JS_class/paises.js"></script>
     <script src="JS_class/persona_class.js"></script>
