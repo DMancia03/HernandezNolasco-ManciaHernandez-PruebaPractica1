@@ -3,7 +3,7 @@ var mytablesDiv = document.getElementById("mydatas");
 function inicio(){
 
     if(!(localStorage.length>0)){
-        var text = "<h1>AÚN NO HAY DATOS INGRESADOS</h1>";
+        var text = "<h1 style='text-align:center; ' class='full'>AÚN NO HAY DATOS INGRESADOS</h1>";
         mytablesDiv.innerHTML +=text;
     }else{
 
