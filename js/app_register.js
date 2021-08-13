@@ -1,3 +1,5 @@
+//Una función la cual nos ayuda a cambiar los diferentes departamentos dependiendo 
+// de el país 
 document.getElementById('pResidencia').addEventListener("change", function(e){
     var target = e.target; 
     var dpinput = document.getElementById('dResidencia');
@@ -25,7 +27,8 @@ document.getElementById('pResidencia').addEventListener("change", function(e){
         case "7":
             pais = new Panama();
        break
-        
+        default:
+            dpinput.disabled = true;
     }
     dpinput.innerHTML = "";
     departamentos = pais.getDepartamento();

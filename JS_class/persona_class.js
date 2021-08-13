@@ -1,6 +1,6 @@
 //clase para la creación del objeto donde tendremos todas la propiedades y metodos
 class Persona{
-    constructor(name, lastName, birthday, genre, homeCountry , tel, email, phone ){
+    constructor(name, lastName, birthday, genre, homeCountry , tel, email, phone, nowCountry, dep, direction ){
         this.nombre =  name; 
         this.apellido = lastName;
         this.nacimiento =  birthday;
@@ -9,6 +9,9 @@ class Persona{
         this.email = email;
         this.telefono = tel;
         this.celular = phone;
+        this.paisR = nowCountry;
+        this.depR = dep;
+        this.direccion = direction;
     }
 
     getEmail(){
