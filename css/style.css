@@ -17,11 +17,11 @@ header{
 .header{
     display: flex;   
     align-items: center;
+    padding: 1em 0.5em;
 }
 .logo{
     color: white;
     width: 50%;
-    padding: 0.5em;
     font-size: 2em;
 }
 .urls{
@@ -42,4 +42,43 @@ header{
     background-color: var(--azulMedio);
     border-radius: 10px;
     transition: font-weight 0.5ms;
+}
+.button{
+    color: var(--blanco);
+    display: none;
+    width: 25%;
+}
+.button label{
+    width: 100%;
+    font-size: 2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button>input{
+    display: none;
+}
+@media (max-width: 700px ){
+    .button{
+        display: initial;
+    }
+    .urls{
+        position: absolute;
+        background-color: var(--azulFuerte);
+        top: 11vh;
+        height: 80%;
+        left: 0;
+        flex-direction: column;
+        width: 100%;
+        font-size: 2em;
+        justify-content:  flex-start;
+        margin-left: -100%;
+    }
+    .urls p{
+        margin: 1em;
+    }
+    .button #btnMenu:checked ~.urls{
+        margin-left: 0;
+    }
 }
