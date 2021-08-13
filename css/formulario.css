@@ -14,7 +14,7 @@ article{
     align-items: center;
     justify-content: center;
 }
-article form, article div{
+article form{
     width: 75%;
     margin: 1em;
     padding: 2em;
@@ -22,6 +22,15 @@ article form, article div{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
+article div{
+    width: 90%;
+    margin: 1em;
+    padding: 2em;
+    box-shadow: 0.5px 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.5);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
 form h1{
     text-align: center;
     font-size: 2em;
